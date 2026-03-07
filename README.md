@@ -1,16 +1,107 @@
-# food_app
+# 🍔 Burger App (Flutter)
 
-A new Flutter project.
+A modern food ordering application built with **Flutter** that allows users to browse burgers, add them to cart, place orders, and manage their profile.
 
-## Getting Started
+This project demonstrates building a real-world mobile application with authentication, state management, API integration, and clean UI.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* 🔐 User Authentication (Sign Up & Login)
+* 🔄 Auto Login using stored token
+* 🍔 Browse products with categories
+* 🔍 Search for products
+* 📄 Product Details screen
+* 🛒 Add products to cart
+* ➕ Increase / Decrease product quantity
+* ❌ Remove products from cart
+* 💳 Checkout and place orders
+* 📦 Order History with Reorder feature
+* 👤 User Profile
+* 🖼 Upload profile image from gallery
+* ✏ Edit user information
+* 🚪 Sign out
+* ⚡ Smooth animations
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📱 Screens
+
+* Splash Screen
+* Login
+* Sign Up
+* Home (Products + Categories)
+* Product Details
+* Cart
+* Checkout
+* Order History
+* Profile
+
+---
+
+## 🛠 Tech Stack
+
+* Flutter
+* Dart
+* REST API
+* Bloc / Cubit (State Management)
+* Clean Architecture
+* HTTP Networking
+
+---
+
+## 📸 Screenshots
+
+(Add your screenshots here)
+![splash.jpeg](screenShots%2Fsplash.jpeg)
+
+![signup.jpeg](screenShots%2Fsignup.jpeg)
+
+![login.jpeg](screenShots%2Flogin.jpeg)
+
+![home.jpeg](screenShots%2Fhome.jpeg)
+
+![product_details.jpeg](screenShots%2Fproduct_details.jpeg)
+
+![product_details2.jpeg](screenShots%2Fproduct_details2.jpeg)
+
+![cart.jpeg](screenShots%2Fcart.jpeg)
+
+![order_history.jpeg](screenShots%2Forder_history.jpeg)
+
+![profile.jpeg](screenShots%2Fprofile.jpeg)
+
+
+## 📂 Project Structure
+
+```
+lib
+ ┣ core
+ ┣ features
+ ┃ ┣ auth
+ ┃ ┣ home
+ ┃ ┣ cart
+ ┃ ┣ orders
+ ┃ ┗ profile
+ ┗ main.dart
+```
+
+---
+
+## 🎯 Purpose of this project
+
+This project was developed as a **portfolio project** to demonstrate Flutter development skills including:
+
+* State management
+* API integration
+* UI/UX development
+* Application architecture
+
+---
+
+## 👨‍💻 Author
+
+Mohamed Rafat
+Flutter Developer
+
