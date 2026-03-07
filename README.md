@@ -54,22 +54,31 @@ This project demonstrates building a real-world mobile application with authenti
 ## 📸 Screenshots
 
 (Add your screenshots here)
+### Splash Screen
 ![splash.jpeg](screenShots%2Fsplash.jpeg)
 
+### SignUp Screen
 ![signup.jpeg](screenShots%2Fsignup.jpeg)
 
+### Login Screen
 ![login.jpeg](screenShots%2Flogin.jpeg)
 
+### Home Screen
 ![home.jpeg](screenShots%2Fhome.jpeg)
 
+### Product details screen
 ![product_details.jpeg](screenShots%2Fproduct_details.jpeg)
 
+### Product details screen2
 ![product_details2.jpeg](screenShots%2Fproduct_details2.jpeg)
 
+### Cart screen
 ![cart.jpeg](screenShots%2Fcart.jpeg)
 
+### Order history screen
 ![order_history.jpeg](screenShots%2Forder_history.jpeg)
 
+### Profile screen
 ![profile.jpeg](screenShots%2Fprofile.jpeg)
 
 
