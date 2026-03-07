@@ -319,7 +319,7 @@ class _CartViewState extends State<CartView> {
                                                                 GetCartProductsCubit>()
                                                             .getCartProducts();
                                                       },
-                                                    )
+                                                    ),
                                                   ],
                                                 ),
                                               ),

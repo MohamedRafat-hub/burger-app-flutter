@@ -58,17 +58,20 @@ class _HomeViewState extends State<HomeView> {
                       Gap(60),
                       UserHeader(),
                       Gap(25),
-                      SearchField(
-                        controller: controller,
-                        onChanged: (value) {
-                          final query = value.toLowerCase();
-                          setState(() {
-                            products = allProducts
-                                ?.where(
-                                    (p) => p.name.toLowerCase().contains(query))
-                                .toList();
-                          });
-                        },
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 4),
+                        child: SearchField(
+                          controller: controller,
+                          onChanged: (value) {
+                            final query = value.toLowerCase();
+                            setState(() {
+                              products = allProducts
+                                  ?.where(
+                                      (p) => p.name.toLowerCase().contains(query))
+                                  .toList();
+                            });
+                          },
+                        ),
                       ),
 
                       /// Categories

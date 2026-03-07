@@ -235,7 +235,7 @@ class _CheckoutViewState extends State<CheckoutView> {
       bottomSheet: SizedBox(
           height: 80,
           child: OrderBottomSheet(
-            price: widget.price,
+            price: widget.price +10 + 15,
             value: selectedValue,
           )),
     );

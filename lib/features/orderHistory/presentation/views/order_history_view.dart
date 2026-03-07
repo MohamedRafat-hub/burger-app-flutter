@@ -177,21 +177,74 @@ class _OrderHistoryViewState extends State<OrderHistoryView> {
                                 )
                           : state is GetOrdersFailure
                               ? Center(
+                                  child: state.apiError.message ==
+                                          'Attempt to read property "id" on null'
+                                      ? Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Text(
+                                              'There is no orders yet',
+                                              style: TextStyle(
+                                                  color: Colors.black,
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.w600),
+                                            ),
+                                            Text(
+                                              'Request your first order',
+                                              style: TextStyle(
+                                                  color: Colors.black,
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.w600),
+                                            ),
+                                            Icon(
+                                              CupertinoIcons.cart_badge_plus,
+                                              color: AppColors.primaryColor,
+                                              size: 80,
+                                            )
+                                          ],
+                                        )
+                                      : Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 16),
+                                          child: Column(
+                                            spacing: 10,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              Text(
+                                                (state.apiError.message ==
+                                                        'Too Many Attempts.')
+                                                    ? 'Error because many requests'
+                                                    : state.apiError.message,
+                                                style: const TextStyle(
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.w600,
+                                                    color: Colors.red),
+                                              ),
+                                              CustomMaterialButton(
+                                                buttonName: 'Tap to refresh 🔃',
+                                                color: AppColors.primaryColor,
+                                                textColor: Colors.white,
+                                                onPressed: () {
+                                                  context
+                                                      .read<GetOrdersCubit>()
+                                                      .getOrders();
+                                                },
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                )
+                              : const Center(
                                   child: Text(
-                                  'Failure to get orders ... \n ${state.apiError.message}',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 16),
-                                ))
-                              : Center(
-                                  child: Text(
-                                  'Something went error please try again',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 16),
-                                ));
+                                    'Something went wrong please try again',
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.red),
+                                  ),
+                                );
                 },
               )
             : Center(

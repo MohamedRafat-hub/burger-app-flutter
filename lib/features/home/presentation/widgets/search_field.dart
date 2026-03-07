@@ -13,8 +13,8 @@ class SearchField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      shadowColor: Colors.grey.shade600,
-      elevation: 4,
+      shadowColor: Colors.grey,
+      elevation: 3,
       borderRadius: BorderRadius.circular(16),
       child: TextField(
         controller: controller,
