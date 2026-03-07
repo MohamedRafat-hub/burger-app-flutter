@@ -53,7 +53,6 @@ This project demonstrates building a real-world mobile application with authenti
 
 ## 📸 Screenshots
 
-(Add your screenshots here)
 ### Splash Screen
 ![splash.jpeg](screenShots%2Fsplash.jpeg)
 
