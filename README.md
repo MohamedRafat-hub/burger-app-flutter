@@ -53,32 +53,43 @@ This project demonstrates building a real-world mobile application with authenti
 
 ## 📸 Screenshots
 
-### Splash Screen
-![splash.jpeg](screenShots%2Fsplash.jpeg)
+### 🟢 Splash & Authentication
+| Animated Splash | Splash Screen |
+| :---: | :---: |
+| ![Animated Splash](assets/screenshots/animated_splash_screen.jpeg) | ![Splash Screen](assets/screenshots/splash_screen.jpeg) |
 
-### SignUp Screen
-![signup.jpeg](screenShots%2Fsignup.jpeg)
+| Login View | Sign Up View |
+| :---: | :---: |
+| ![Login](assets/screenshots/login_view.jpeg) | ![Sign Up](assets/screenshots/sign_up_view.jpeg) |
 
-### Login Screen
-![login.jpeg](screenShots%2Flogin.jpeg)
+---
 
-### Home Screen
-![home.jpeg](screenShots%2Fhome.jpeg)
+### 🍔 Main App & Categories
+| Home View | Search View |
+| :---: | :---: |
+| ![Home](assets/screenshots/home_view.jpeg) | ![Search](assets/screenshots/search_view.jpeg) |
 
-### Product details screen
-![product_details.jpeg](screenShots%2Fproduct_details.jpeg)
+| Classic Category | Slider Category |
+| :---: | :---: |
+| ![Classic Category](assets/screenshots/classic_category.jpeg) | ![Slider Category](assets/screenshots/slider_category.jpeg) |
 
-### Product details screen2
-![product_details2.jpeg](screenShots%2Fproduct_details2.jpeg)
+---
 
-### Cart screen
-![cart.jpeg](screenShots%2Fcart.jpeg)
+### 🛒 Product Details & Cart
+| Product Details 1 | Product Details 2 |
+| :---: | :---: |
+| ![Details 1](assets/screenshots/product_details1.jpeg) | ![Details 2](assets/screenshots/product_details2.jpeg) |
 
-### Order history screen
-![order_history.jpeg](screenShots%2Forder_history.jpeg)
+| Cart | Order Summary |
+| :---: | :---: |
+| ![Cart](assets/screenshots/cart.jpeg) | ![Order Summary](assets/screenshots/order_summary.jpeg) |
 
-### Profile screen
-![profile.jpeg](screenShots%2Fprofile.jpeg)
+---
+
+### 👤 Profile & Orders
+| Profile View | Last Orders |
+| :---: | :---: |
+| ![Profile](assets/screenshots/profile_view.jpeg) | ![Last Orders](assets/screenshots/last_orders.jpeg) |
 
 
 ## 📂 Project Structure
