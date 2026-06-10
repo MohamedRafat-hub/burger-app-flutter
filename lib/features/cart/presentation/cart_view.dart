@@ -7,12 +7,12 @@ import 'package:food_app/core/constants/app_colors.dart';
 import 'package:food_app/features/auth/data/repos/auth_repo.dart';
 import 'package:food_app/features/auth/presentation/views/signup_view.dart';
 import 'package:food_app/features/auth/presentation/views/widgets/custom_material_button.dart';
-import 'package:food_app/features/cart/data/managers/get_cart_products_cubit/get_cart_products_cubit.dart';
-import 'package:food_app/features/cart/data/managers/remove_item_cubit/remove_item_cubit.dart';
 import 'package:food_app/features/cart/data/models/cart_model.dart';
 import 'package:food_app/features/checkout/presentation/views/checkout_view.dart';
 import 'package:food_app/shared/total_price.dart';
 
+import 'managers/get_cart_products_cubit/get_cart_products_cubit.dart';
+import 'managers/remove_item_cubit/remove_item_cubit.dart';
 import 'widgets/cart_item.dart';
 
 class CartView extends StatefulWidget {

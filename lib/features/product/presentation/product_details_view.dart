@@ -4,10 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:food_app/core/constants/app_colors.dart';
-import 'package:food_app/features/cart/data/managers/cart_cubit/cart_cubit.dart';
-import 'package:food_app/features/cart/data/managers/get_cart_products_cubit/get_cart_products_cubit.dart';
 import 'package:food_app/features/cart/data/models/cart_model.dart';
-import 'package:food_app/features/cart/presentation/cart_view.dart';
 import 'package:food_app/features/orderHistory/data/managers/getOrders/get_orders_cubit.dart';
 import 'package:food_app/features/orderHistory/data/managers/saveOrderCubit/save_order_cubit.dart';
 import 'package:food_app/features/product/data/managers/side_option_cubit/side_options_cubit.dart';
@@ -15,10 +12,11 @@ import 'package:food_app/features/product/data/managers/topping_cubit/get_toppin
 import 'package:food_app/features/product/presentation/widgets/display_side_options.dart';
 import 'package:food_app/features/product/presentation/widgets/display_toppings.dart';
 import 'package:food_app/features/product/presentation/widgets/spicy_slider.dart';
-import 'package:food_app/shared/custom_button.dart';
 import 'package:food_app/shared/custom_text.dart';
 import 'package:gap/gap.dart';
 import '../../../shared/total_price.dart';
+import '../../cart/presentation/managers/cart_cubit/cart_cubit.dart';
+import '../../cart/presentation/managers/get_cart_products_cubit/get_cart_products_cubit.dart';
 
 class ProductDetailsView extends StatefulWidget {
   const ProductDetailsView(

@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:food_app/core/network/api_error.dart';
 import 'package:food_app/features/cart/data/repos/cart_repo.dart';
 
-import '../../models/cart_model.dart';
+import '../../../data/models/cart_model.dart';
+
 
 part 'cart_state.dart';
 
