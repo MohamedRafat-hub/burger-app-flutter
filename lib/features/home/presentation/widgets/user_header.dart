@@ -2,11 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:food_app/features/auth/data/managers/profile_cubit/profile_cubit.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../shared/custom_text.dart';
+import '../../../auth/presentation/managers/profile_cubit/profile_cubit.dart';
 
 class UserHeader extends StatefulWidget {
   const UserHeader({

@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:food_app/core/constants/app_colors.dart';
-import 'package:food_app/features/auth/data/managers/profile_cubit/profile_cubit.dart';
 import 'package:food_app/features/auth/data/models/user_model.dart';
 import 'package:food_app/features/auth/data/repos/auth_repo.dart';
 import 'package:food_app/features/auth/presentation/views/login_view.dart';
@@ -15,6 +14,7 @@ import 'package:gap/gap.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 import '../../../../core/utils/pref_helper.dart';
+import '../managers/profile_cubit/profile_cubit.dart';
 
 class ProfileView extends StatefulWidget {
   const ProfileView({super.key});

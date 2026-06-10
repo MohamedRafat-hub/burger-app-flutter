@@ -4,15 +4,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:food_app/core/constants/app_colors.dart';
-import 'package:food_app/features/auth/data/managers/profile_cubit/profile_cubit.dart';
-import 'package:food_app/features/auth/presentation/views/widgets/custom_material_button.dart';
 import 'package:food_app/features/cart/data/models/cart_model.dart';
 import 'package:food_app/features/checkout/presentation/views/widgets/order_details_widget.dart';
-import 'package:food_app/features/home/data/models/product_model.dart';
-import 'package:food_app/features/orderHistory/data/managers/saveOrderCubit/save_order_cubit.dart';
 import 'package:food_app/shared/custom_text.dart';
 import 'package:food_app/shared/total_price.dart';
 import 'package:gap/gap.dart';
+
+import '../../../auth/presentation/managers/profile_cubit/profile_cubit.dart';
 
 class CheckoutView extends StatefulWidget {
   const CheckoutView({super.key, required this.price, required this.items});
@@ -157,81 +155,6 @@ class _CheckoutViewState extends State<CheckoutView> {
           ),
         ),
       ),
-      // bottomSheet: Material(
-      //   elevation: 10,
-      //   child: Container(
-      //     decoration: BoxDecoration(
-      //       borderRadius: BorderRadius.only(
-      //         topLeft: Radius.circular(20),
-      //         topRight: Radius.circular(20),
-      //       ),
-      //       color: Colors.white,
-      //       boxShadow: [
-      //         BoxShadow(
-      //           color: Colors.grey.withOpacity(0.5),
-      //           spreadRadius: 5,
-      //           blurRadius: 7,
-      //           offset: Offset(0, 3), // changes position of shadow
-      //         ),
-      //       ],
-      //     ),
-      //     height: 75,
-      //     child: Row(
-      //       children: [
-      //         TotalPrice(
-      //           price: widget.price + 10 + 15,
-      //         ),
-      //         Spacer(),
-      //
-      //
-      //
-      //         Padding(
-      //           padding: const EdgeInsets.only(right: 16),
-      //           child: MaterialButton(
-      //             padding: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-      //             shape: RoundedRectangleBorder(
-      //               borderRadius: BorderRadiusGeometry.circular(12),
-      //             ),
-      //             color: AppColors.primaryColor,
-      //             onPressed: () {
-      //               if (selectedValue == 1) {
-      //                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-      //                     backgroundColor: AppColors.primaryColor,
-      //                     content: Center(
-      //                         child: Text(
-      //                       'Ok delivery man will be receive money cached',
-      //                       style: TextStyle(
-      //                           fontSize: 16,
-      //                           fontWeight: FontWeight.w600,
-      //                           color: Colors.white),
-      //                     ))));
-      //               } else if (selectedValue == 2) {
-      //                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-      //                     backgroundColor: Colors.green,
-      //                     content: Center(
-      //                         child: Text(
-      //                       'Payment with debit card successfully',
-      //                       style: TextStyle(
-      //                           fontSize: 16,
-      //                           fontWeight: FontWeight.w600,
-      //                           color: Colors.white),
-      //                     ))));
-      //               }
-      //             },
-      //             child: Text(
-      //               'Pay now',
-      //               style: TextStyle(
-      //                   color: Colors.white,
-      //                   fontSize: 18,
-      //                   fontWeight: FontWeight.w700),
-      //             ),
-      //           ),
-      //         )
-      //       ],
-      //     ),
-      //   ),
-      // ),
-
       bottomSheet: SizedBox(
           height: 80,
           child: OrderBottomSheet(

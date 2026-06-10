@@ -4,7 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_app/core/constants/app_colors.dart';
 import 'package:food_app/core/network/api_service.dart';
-import 'package:food_app/features/auth/data/managers/signup_cubit/signup_cubit.dart';
 import 'package:food_app/features/auth/data/repos/auth_repo.dart';
 import 'package:food_app/features/auth/presentation/views/login_view.dart';
 import 'package:food_app/features/auth/presentation/views/widgets/custom_material_button.dart';
@@ -12,6 +11,7 @@ import 'package:food_app/shared/custom_text.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../shared/custom_text_form_field.dart';
+import '../managers/signup_cubit/signup_cubit.dart';
 
 class SignupView extends StatefulWidget {
   const SignupView({super.key});
