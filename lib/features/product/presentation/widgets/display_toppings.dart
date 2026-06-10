@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:food_app/features/product/presentation/widgets/topping_card.dart';
 
 import '../../../../core/constants/app_colors.dart';
-import '../../data/managers/topping_cubit/get_toppings_cubit.dart';
+import '../managers/topping_cubit/get_toppings_cubit.dart';
 
 class DisplayToppings extends StatefulWidget {
    DisplayToppings({

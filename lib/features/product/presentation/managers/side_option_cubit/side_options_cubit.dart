@@ -3,8 +3,7 @@ import 'package:food_app/core/network/api_error.dart';
 import 'package:food_app/features/home/data/repos/product_repo.dart';
 import 'package:meta/meta.dart';
 
-import '../../models/topping_model.dart';
-import '../topping_cubit/get_toppings_cubit.dart';
+import '../../../data/models/topping_model.dart';
 
 part 'side_options_state.dart';
 

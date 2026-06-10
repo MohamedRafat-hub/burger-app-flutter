@@ -9,11 +9,11 @@ import 'package:food_app/features/home/presentation/widgets/card_item.dart';
 import 'package:food_app/features/home/presentation/widgets/home_category.dart';
 import 'package:food_app/features/home/presentation/widgets/search_field.dart';
 import 'package:food_app/features/home/presentation/widgets/user_header.dart';
-import 'package:food_app/features/product/data/managers/side_option_cubit/side_options_cubit.dart';
-import 'package:food_app/features/product/data/managers/topping_cubit/get_toppings_cubit.dart';
 import 'package:food_app/features/product/presentation/product_details_view.dart';
 import 'package:gap/gap.dart';
 
+import '../../product/presentation/managers/side_option_cubit/side_options_cubit.dart';
+import '../../product/presentation/managers/topping_cubit/get_toppings_cubit.dart';
 import 'managers/getProductsCubit/get_products_cubit.dart';
 import 'managers/get_categories_cubit/get_categories_cubit.dart';
 import 'managers/get_products_by_category/get_products_by_category_cubit.dart';

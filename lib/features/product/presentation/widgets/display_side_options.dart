@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:food_app/features/product/data/managers/side_option_cubit/side_options_cubit.dart';
 import 'package:food_app/features/product/presentation/widgets/topping_card.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../managers/side_option_cubit/side_options_cubit.dart';
 
 class DisplaySideOptions extends StatefulWidget {
    DisplaySideOptions({

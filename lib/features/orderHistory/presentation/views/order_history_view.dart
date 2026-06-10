@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:food_app/core/constants/app_colors.dart';
 import 'package:food_app/features/auth/data/repos/auth_repo.dart';
-import 'package:food_app/features/orderHistory/data/managers/getOrders/get_orders_cubit.dart';
 import 'package:food_app/features/orderHistory/data/models/order_model.dart';
 import 'package:food_app/root.dart';
 import 'package:food_app/shared/custom_button.dart';
@@ -12,6 +11,7 @@ import 'package:food_app/shared/custom_button.dart';
 import '../../../../shared/custom_text.dart';
 import '../../../auth/presentation/views/signup_view.dart';
 import '../../../auth/presentation/views/widgets/custom_material_button.dart';
+import '../managers/getOrders/get_orders_cubit.dart';
 
 class OrderHistoryView extends StatefulWidget {
   const OrderHistoryView({super.key});
